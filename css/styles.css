@@ -418,3 +418,67 @@ main section.contact button:hover {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+/** Responsiveness **/
+@media (max-width: 1400px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  nav {
+    max-width: none;
+    height: auto;
+    padding: 32px;
+  }
+
+  nav h1 {
+    margin-bottom: 16px;
+  }
+
+  nav ul {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  nav ul li {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+
+  nav p,
+  nav > a {
+    display: none;
+  }
+
+  main section {
+    padding: 32px;
+  }
+
+  main section.home {
+    flex-direction: column;
+  }
+
+  main section.home .avatar {
+    margin-right: 0;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+
+  main section.home .content ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  main section.portfolio .photos {
+    display: inline-grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+  }
+}
