@@ -365,6 +365,10 @@ main section.portfolio {
   justify-content: center;
 }
 
+main section.paragraph {
+  justify-content: center;
+}
+
 main section.portfolio img {
   max-width: 70%;
 }
