@@ -162,8 +162,13 @@
             action="https://formsubmit.co/murutupeter@gmail.com"
             method="POST"
           >
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Name" required />
             <input type="text" placeholder="Email" required />
+            <input
+              type="hidden"
+              name="_url"
+              value="https://murutu.github.io/peter-murutu-portfolio/"
+            />
             <textarea placeholder="Message"></textarea>
             <button type="submit">
               Send Message
